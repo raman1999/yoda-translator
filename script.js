@@ -1,4 +1,4 @@
-alert("You can only use this for 5 times in an hour, so use is wisely.");
+
 var translateBtn = document.querySelector("#translate-btn");
 var textInput = document.querySelector("#text-input");
 var outputDiv = document.querySelector("#output");
