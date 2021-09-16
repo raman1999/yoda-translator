@@ -14,12 +14,12 @@ function errorHandler(error) {
 
 
 translateBtn.addEventListener("click", function clickEventHandler() {
-    var inputText = textInput.value;    //taking input
+    var inputText = textInput.value;    //input
     fetch(getTranslationURL(inputText))
         .then(response => response.json())
         .then(json => {
             var translatedText = json.contents.translated;
-            outputDiv.innerText = translatedText;  //receiving output
+            outputDiv.innerText = translatedText;  //output
         })
         .catch(errorHandler)
 })
